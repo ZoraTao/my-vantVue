@@ -1,6 +1,5 @@
 # Vant-demo
-Vant 示例页面汇总。
-
+vue + vant 示例页面
 
 ## 示例
 
