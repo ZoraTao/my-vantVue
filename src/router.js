@@ -28,6 +28,13 @@ const routes = [
     meta: {
       title: '商品详情'
     }
+  },
+  {
+    name: 'list',
+    component: () => import('./view/list/list.vue'),
+    meta: {
+      title: '列表'
+    }
   }
 ];
 

@@ -18,9 +18,9 @@
     </van-cell-group>
 
     <van-cell-group class="goods-cell-group">
-      <van-cell value="进入店铺" icon="shop" is-link @click="sorry">
+      <van-cell value="进入店铺" icon="shop" is-link @click="goList">
         <template slot="title">
-          <span class="van-cell-text">桃子的小店</span>
+          <span class="van-cell-text">桃子的乌托邦</span>
           <van-tag type="danger">官方</van-tag>
         </template>
       </van-cell>
@@ -71,6 +71,7 @@ export default {
     [Cell.name]: Cell,
     [CellGroup.name]: CellGroup,
     [Swipe.name]: Swipe,
+    [Toast.name]: Toast,
     [SwipeItem.name]: SwipeItem,
     [GoodsAction.name]: GoodsAction,
     [GoodsActionBigBtn.name]: GoodsActionBigBtn,
@@ -99,7 +100,11 @@ export default {
 
     sorry() {
       Toast('暂无后续逻辑~');
-    }
+    },
+
+     goList() {
+      this.$router.push('list');
+    },
   }
 };
 </script>
