@@ -54,6 +54,7 @@ export default {
     login() {
       this.$router.push('goods');
     },
+    
     sorry() {
       Toast('请输入正确用户名和密码！');
     }
